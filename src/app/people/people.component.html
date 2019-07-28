@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let person of people">
+        <button (click)="getPersonDetails(person.id)">{{person.name}}</button>
+    </li>
+</ul>
+
+<form [formGroup]="personFrm">
+    <input type="text" name="name" formControlName="name">
+    <button [disabled]="!personFrm.valid" (click)="addPerson()">add</button>
+</form>

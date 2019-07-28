@@ -1,0 +1,11 @@
+<form [formGroup]="addHeroFrm">
+    Name: <input type="text" formControlName="name">
+    <br>
+    Height: <input type="number" formControlName="height">
+    <br>
+    Weight: <input type="number" formControlName="weight">
+    <br>
+    Power: <input type="number" formControlName="power">
+    <br>
+    <button type="button" [disabled]="!addHeroFrm.valid" (click)="addHero(addHeroFrm)"> add hero </button>
+</form>

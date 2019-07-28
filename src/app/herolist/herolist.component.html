@@ -1,0 +1,9 @@
+<!-- <input type="text" [(ngModel)]="hello"> -->
+
+<ul>
+    <li *ngFor="let hero of heroes">
+        <a [routerLink]="[ '/heroDetails', hero.id ]">{{hero.name}}</a>
+    </li>
+</ul>
+<!-- <input type="text" [(ngModel)]="hero">
+<button type="button" (click)="addHero()">add hero</button> -->
